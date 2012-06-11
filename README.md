@@ -1,14 +1,14 @@
-![status](https://secure.travis-ci.org/wearefractal/APPNAME.png?branch=master)
+![status](https://secure.travis-ci.org/wearefractal/argus.png?branch=master)
 
 ## Information
 
 <table>
 <tr> 
-<td>Package</td><td>APPNAME</td>
+<td>Package</td><td>argus</td>
 </tr>
 <tr>
 <td>Description</td>
-<td>NOTHING HERE YET</td>
+<td>Complex CLI argument parser</td>
 </tr>
 <tr>
 <td>Node Version</td>
@@ -16,15 +16,19 @@
 </tr>
 </table>
 
+## Details
+
+Argus allows you to pass an array of complex data to your application through a CLI. This can be an array of objects, strings, numbers, you name it. Anything that is a valid JSON array can be used. Ideally when you get this array of objects you would pass it into whatever function was being called.
+
 ## Usage
 
 ```coffee-script
-NOTHING HERE YET
+mycli dostuff["johnny boy",true,-1]
 ```
 
-## Examples
+## Quirks
 
-You can view more examples in the [example folder.](https://github.com/wearefractal/APPNAME/tree/master/examples)
+Bash doesn't agree with a lot of characters so some escaping may be required. Still looking for a solution to this.
 
 ## LICENSE
 
