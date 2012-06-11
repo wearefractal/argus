@@ -18,7 +18,7 @@
 
 ## Details
 
-Argus allows you to pass an array of complex data to your application through a CLI. This can be an array of objects, strings, numbers, you name it. Anything that is a valid JSON array can be used. Ideally when you get this array of objects you would pass it into whatever function was being called.
+Argus allows you to pass an array of complex data to your application through a CLI. This can be an array of objects, strings, numbers, you name it. Anything valid JSON array can be used.
 
 ## Usage
 
