@@ -2,12 +2,7 @@
 {join} = require 'path'
 {buildParser} = require 'pegjs'
 
-safe = buildParser String readFileSync join __dirname, 'safe.pegjs'
-#unsafe = buildParser String readFileSync join __dirname, 'unsafe.pegjs'
+standard = buildParser String readFileSync join __dirname, 'standard.pegjs'
 
 module.exports =
-  #unsafe: (command) ->
-  #  unsafe.parse command
-
-  parse: (command) ->
-    safe.parse command
+  parse: (command) -> standard.parse command
