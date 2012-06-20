@@ -1,7 +1,7 @@
 {
    "name":"argus",
    "description":"Complex CLI argument parser",
-   "version":"0.0.1",
+   "version":"0.0.2",
    "homepage":"http://github.com/wearefractal/argus",
    "repository":"git://github.com/wearefractal/argus.git",
    "author":"Fractal <contact@wearefractal.com> (http://wearefractal.com/)",

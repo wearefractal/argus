@@ -23,12 +23,22 @@ Argus allows you to pass an array of complex data to your application through a 
 ## Usage
 
 ```coffee-script
-mycli dostuff["johnny boy",true,-1]
+# You can pass an array of JSON values
+mycli dostuff["johnny boy",true,-1] # {"dostuff":["johnny boy",true,-1]}
+
+# You can set it to a single JSON value
+mycli dostuff=true # {"dostuff":true} 
+
+# You can mix single and multi-value commands
+mycli dostuff=true:otherstuff[true,2.05,"test"] # {"dostuff":true, "otherstuff":[true,2.05,"test"]}
+
+# Non-JSON arguments used with = will be turned into strings
+mycli dostuff=testlol # {"dostuff":"testlol"}
 ```
 
 ## Quirks
 
-Bash doesn't agree with a lot of characters so some escaping may be required. Still looking for a solution to this.
+Bash doesn't agree with a lot of JSON characters so some escaping may be required. Still looking for a solution to this.
 
 ## LICENSE
 
